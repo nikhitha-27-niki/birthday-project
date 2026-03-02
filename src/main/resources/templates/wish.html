@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday 💙</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background:url('/brd2.jpg') no-repeat center center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  font-family:Segoe UI;
+  animation:fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.container{
+  background:rgba(0,0,0,0.6);
+  padding:40px;
+  border-radius:20px;
+  width:60%;
+}
+
+
+button{
+  margin-top:20px;
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday Shashiii 💙</h1>
+
+<p id="message"></p>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+var text = `Many more happy returns of the day Sesii🥰..
+
+You came into my life so normally…
+But now I can't even imagine one single day without you.
+
+You are not just my bestie.
+You are my daily habit. My peace. My headache. My comfort.
+My unpaid therapist. My motivation. My safe place.
+
+You may not always see it…
+But you matter to me more than words can explain.
+Your happiness affects my mood.
+Your silence worries me.
+Your smile feels like my achievement.
+
+I don’t know what the future holds.
+But I know one thing —
+Wherever life takes us, I will always silently pray for your peace, your success, and your happiness.
+
+If someday you ever feel alone,
+remember there is one heart that beats a little softer when it thinks about you.
+
+You are not replaceable.
+You are not ordinary.
+You are deeply special to me.
+
+I pray that no matter how busy life gets…
+No matter who enters your life…
+You never forget that there is one girl
+Who silently cares for you more than anyone else.
+
+From the day you entered my life, something quietly changed in me.
+You are my strength, my calm, and my silent happiness.
+No matter where life takes us, you will always have a place in my heart.
+You are deeply special to me, more than words can explain.
+
+Once again Happy Brd ra Bangaram😘...`;
+var i = 0;
+var speed = 35;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("message").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+typeWriter();
+});
+</script>
+
+<p id="secret" style="display:none; font-size:22px; white-space:pre-line;">
+I LoVe Uh BuJjI ❤️ Na BaNgArUkOnDa 🥰  
+ChAaLa BaDaPeTtInA rA kAnNa NiNnU 😢  
+BaA cHuSkUnTa Ra NkA...  
+AsAl RuDe Ga BeHaVe ChEyAnU... SaRe NaH 😒
+</p>
+
+<button onclick="revealSecret()">Click Only If You Love Me 😌</button>
+
+<script>
+function revealSecret(){
+  document.getElementById("secret").style.display="block";
+}
+</script>
+
+<script>
+for(let i=0;i<20;i++){
+  let heart = document.createElement("div");
+  heart.innerHTML="💙";
+  heart.style.position="fixed";
+  heart.style.left=Math.random()*100+"%";
+  heart.style.top="100%";
+  heart.style.fontSize="20px";
+  heart.style.animation="float 6s linear infinite";
+  document.body.appendChild(heart);
+}
+
+var style=document.createElement('style');
+style.innerHTML=`
+@keyframes float{
+  0%{transform:translateY(0);}
+  100%{transform:translateY(-120vh);}
+}`;
+document.head.appendChild(style);
+</script>
+<!--  
+<p>
+Many more happy returns of the day Sesii🥰..
+You came into my life so normally…
+But now I can't even imagine one single day without you.
+You are not just my bestie.
+You are my daily habit. My peace. My headache. My comfort.
+My unpaid therapist. My motivation. My safe place.
+You may not always see it…
+But you matter to me more than words can explain.
+Your happiness affects my mood.
+Your silence worries me.
+Your smile feels like my achievement.
+I don’t know what the future holds.
+But I know one thing —
+Wherever life takes us, I will always silently pray for your peace, your success, and your happiness.
+If someday you ever feel alone,
+remember there is one heart that beats a little softer when it thinks about you.
+You are not replaceable.
+You are not ordinary.
+You are deeply special to me.
+I pray that no matter how busy life gets…
+No matter who enters your life…
+You never forget that there is one girl
+Who silently cares for you more than anyone else.
+From the day you entered my life, something quietly changed in me.
+You are my strength, my calm, and my silent happiness.
+No matter where life takes us, you will always have a place in my heart.
+You are deeply special to me, more than words can explain.
+
+Once again Happy Brd ra Bangaram😘...
+</p>
+-->
+
+<button onclick="goMemories()">Wanna See More? 💫</button>
+
+</div>
+
+<!-- Confetti Script -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+window.onload = function(){
+   confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 }
+   });
+}
+
+function goMemories(){
+ document.body.style.opacity="0";
+ setTimeout(function(){
+   window.location.href="/memories";
+ },800);
+}
+</script>
+
+</body>
+</html>
